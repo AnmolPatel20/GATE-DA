@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GATE-DA Notes by Anmol Patel</title>
+    <title>GATE DA Prep - Free Notes by Anmol Patel</title>
     <meta name="description"
-        content="Free handwritten GATE-DA notes by Anmol Patel. Access PDFs for Aptitude, DSA, and more.">
+        content="Free handwritten notes, formulas, PYQs and study resources for GATE Data Science & Artificial Intelligence by Anmol Patel.">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -23,467 +27,247 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#home" class="logo">
-                <img src="assets/logo.png" alt="GATE-DA Logo" class="nav-logo-img">
-                <span>GATE-DA Notes</span>
-            </a>
-
+            <div class="nav-left">
+                <a href="#home" class="logo">
+                    <img src="assets/logo.png" alt="Logo" class="logo-img">
+                    ANMOL PATEL
+                </a>
+            </div>
             <div class="nav-links">
                 <a href="#home" class="nav-link active">Home</a>
-                <a href="#subjects" class="nav-link">Subjects</a>
-                <a href="#youtube" class="nav-link">YouTube</a>
+                <a href="#subjects" class="nav-link">Notes</a>
                 <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
-                    <i class="fas fa-moon"></i>
-                </button>
             </div>
-
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
+            <button class="hamburger" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu">
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
         <a href="#home" class="mobile-link">Home</a>
-        <a href="#subjects" class="mobile-link">Subjects</a>
-        <a href="#youtube" class="mobile-link">YouTube</a>
+        <a href="#subjects" class="mobile-link">Notes</a>
         <a href="#about" class="mobile-link">About</a>
-        <a href="#contact" class="mobile-link">Contact</a>
     </div>
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
-        <div class="container hero-content">
-            <h1 class="hero-title">GATE-DA Notes <br> <span class="highlight">by Anmol Patel</span></h1>
-            <p class="hero-subtitle">Exam-Oriented handwritten notes for GATE Data Science & AI. <br>Completely Free.
-                Open
-                Access.</p>
-            <div class="hero-buttons">
-                <a href="#subjects" class="btn btn-primary">Get Notes <i class="fas fa-arrow-right"></i></a>
-                <a href="https://anmolpatel20.github.io/Anmol_Portfolio/" class="btn btn-secondary">Meet the Learner <i
-                        class="fas fa-user"></i></a>
-                <a href="#contact"
-                    class="btn btn-primary">Inquiry <i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
-        <div class="hero-bg-slider">
-            <div class="hero-bg"
-                style="background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
-            </div>
-            <div class="hero-bg"
-                style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
-            </div>
-        </div>
-        <div class="hero-overlay"></div>
-    </section>
+    <main>
 
-    <!-- Subjects / Notes Section -->
-    <section id="subjects" class="section">
-        <div class="container">
-            <h2 class="section-title">Subjects & Notes</h2>
-            <div class="notes-tree">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <h1 class="hero-title">GATE DA Notes</h1>
+                <p class="hero-subtitle">Your comprehensive portal for high-quality handwritten notes, formulas, and solved PYQs specifically curated for the GATE Data Science & AI syllabus.</p>
 
-                <!-- Subject: Aptitude -->
-                <div class="subject-group">
-                    <div class="subject-header">
-                        <h3><i class="fas fa-brain"></i>General Aptitude</h3>
-                        <i class="fas fa-chevron-down toggle-icon"></i>
-                    </div>
-                    <div class="subject-content">
-
-                        <!-- Sub-topic: Quantitative Aptitude -->
-                        <div class="topic-group">
-                            <div class="topic-header">
-                                <h4>Quantitative Aptitude</h4>
-                                <i class="fas fa-chevron-down toggle-icon"></i>
-                            </div>
-                            <div class="topic-content">
-                                <div class="pdf-item" data-pdf="pdfs/General_Aptitude/CALENDAR_Prepared_by_Anmol_Patel.pdf">
-                                    <i class="fas fa-file-pdf"></i>
-                                    <span>Calender</span>
-                                </div>
-                                <div class="pdf-item" data-pdf="pdfs/General_Aptitude/CLOCK_Prepared_by_Anmol_Patel.pdf">
-                                    <i class="fas fa-file-pdf"></i>
-                                    <span>Clock</span>
-                                </div>
-                                <div class="pdf-item" data-pdf="pdfs/General_Aptitude/AVERAGE_Prepared_by_Anmol_Patel.pdf">
-                                    <i class="fas fa-file-pdf"></i>
-                                    <span>Average</span>
-                                </div>
-                                <div class="pdf-item" data-pdf="pdfs/General_Aptitude/PERCENTAGE_Prepared_by_Anmol_Patel.pdf">
-                                    <i class="fas fa-file-pdf"></i>
-                                    <span>Percentage</span>
-                                </div>
-                                <div class="pdf-item" data-pdf="pdfs/General_Aptitude/PROFIT_&_LOSS_Prepared_by_Anmol_Patel.pdf">
-                                    <i class="fas fa-file-pdf"></i>
-                                    <span>Profit & Loss</span>
-                                </div>
-                                <div class="pdf-item" data-pdf="pdfs/General_Aptitude/MIXTURES_&_ALLIGATION_Prepared_by_Anmol_Patel.pdf">
-                                    <i class="fas fa-file-pdf"></i>
-                                    <span>Mixtures & Alligation</span>
-                                </div>
-                                <div class="pdf-item" data-pdf="pdfs/General_Aptitude/NUMBER_SYSTEM_&_COUNTING_THEORY_Prepared_by_Anmol_Patel.pdf">
-                                    <i class="fas fa-file-pdf"></i>
-                                    <span>Number System & Counting Theory</span>
-                                </div>
-                                <div class="pdf-item" data-pdf="pdfs/General_Aptitude/TIME_&_WORK_Prepared_by_Anmol_Patel.pdf">
-                                    <i class="fas fa-file-pdf"></i>
-                                    <span>Time & Work</span>
-                                </div>
-                                <div class="pdf-item" data-pdf="pdfs/General_Aptitude/PIPES_&_CISTERN_Prepared_by_Anmol_Patel.pdf">
-                                    <i class="fas fa-file-pdf"></i>
-                                    <span>Pipes & Cistern</span>
-                                </div>
-                                <div class="pdf-item" data-pdf="pdfs/General_Aptitude/TIME_&_DISTANCE_Prepared_by_Anmol_Patel.pdf">
-                                    <i class="fas fa-file-pdf"></i>
-                                    <span>Time & Distance</span>
-                                </div>
-                                <div class="pdf-item" data-pdf="pdfs/General_Aptitude/DATA_INTERPRETATION_Preapred_by_Anmol_Patel.pdf">
-                                    <i class="fas fa-file-pdf"></i>
-                                    <span>Data Interpretation</span>
-                                </div>
-                            </div>
+                <div class="countdown-box">
+                    <p class="countdown-label">COUNTDOWN TO GATE DA 2027</p>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="cd-days">00</span>
+                            <span class="countdown-unit">DAYS</span>
                         </div>
-
-                        <!-- Sub-topic: Verbal Aptitude -->
-                        <div class="topic-group">
-                            <div class="topic-header">
-                                <h4>Verbal Aptitude</h4>
-                                <i class="fas fa-chevron-down toggle-icon"></i>
-                            </div>
-                            <div class="topic-content">
-                                <div class="pdf-item" data-pdf="">
-                                    <p>Coming Soon</p>
-                                    <span></span>
-                                </div>
-                            </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="cd-hours">00</span>
+                            <span class="countdown-unit">HOURS</span>
                         </div>
-
-                        <div class="topic-group">
-                            <div class="topic-header">
-                                <h4>Reasoning</h4>
-                                <i class="fas fa-chevron-down toggle-icon"></i>
-                            </div>
-                            <div class="topic-content">
-                                <div class="pdf-item" data-pdf="">
-                                    <p>Coming Soon</p>
-                                </div>
-                            </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="cd-minutes">00</span>
+                            <span class="countdown-unit">MIN</span>
                         </div>
-
-                        <div class="topic-group">
-                            <div class="topic-header">
-                                <h4>Special Aptitude</h4>
-                                <i class="fas fa-chevron-down toggle-icon"></i>
-                            </div>
-                            <div class="topic-content">
-                                <div class="pdf-item" data-pdf="">
-                                    <p>Coming Soon</p>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <!-- Subject: Probability -->
-                <div class="subject-group">
-                    <div class="subject-header">
-                        <h3><i class="fas fa-dice"></i> Probability & Statistics</h3>
-                        <i class="fas fa-chevron-down toggle-icon"></i>
-                    </div>
-                    <div class="subject-content">
-                        <div class="pdf-item" data-pdf="">
-                            <p>Coming Soon</p>
-                            <span></span>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="cd-seconds">00</span>
+                            <span class="countdown-unit">SEC</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Subject: Linear Algebra -->
-                <div class="subject-group">
-                    <div class="subject-header">
-                        <h3><i class="fas fa-border-all"></i> Linear Algebra</h3>
-                        <i class="fas fa-chevron-down toggle-icon"></i>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-project-diagram"></i></div>
+                        <div class="feature-text">
+                            <h4>Structured Learning</h4>
+                            <p>Follow a logical path from basics to advanced.</p>
+                        </div>
                     </div>
-                    <div class="subject-content">
-                        <div class="pdf-item" data-pdf="">
-                            <p>Coming Soon</p>
-                            <span></span>
+                    <div class="feature-divider"></div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                        <div class="feature-text">
+                            <h4>Free Forever</h4>
+                            <p>An open initiative to support the student community.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Subject: Calculus and Optimization -->
-                <div class="subject-group">
-                    <div class="subject-header">
-                        <h3><i class="fas fa-chart-line"></i> Calculus and Optimization</h3>
-                        <i class="fas fa-chevron-down toggle-icon"></i>
-                    </div>
-                    <div class="subject-content">
-                        <div class="pdf-item" data-pdf="">
-                            <p>Coming Soon</p>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Subject: DSA -->
-                <div class="subject-group">
-                    <div class="subject-header">
-                        <h3><i class="fas fa-code"></i>Programming, Data Structures and Algorithms</h3>
-                        <i class="fas fa-chevron-down toggle-icon"></i>
-                    </div>
-                    <div class="subject-content">
-                        <div class="topic-group">
-                            <div class="topic-header">
-                                <h4>Data Structures</h4>
-                                <i class="fas fa-chevron-down toggle-icon"></i>
-                            </div>
-                            <div class="topic-content">
-                                <div class="pdf-item" data-pdf="">
-                                    <p>Coming Soon</p>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Subject: Database Management and Warehousing -->
-                <div class="subject-group">
-                    <div class="subject-header">
-                        <h3><i class="fas fa-database"></i>Database Management and Warehousing</h3>
-                        <i class="fas fa-chevron-down toggle-icon"></i>
-                    </div>
-                    <div class="subject-content">
-                        <div class="topic-group">
-                            <div class="topic-header">
-                                <h4>Database Management [DBMS]</h4>
-                                <i class="fas fa-chevron-down toggle-icon"></i>
-                            </div>
-                            <div class="topic-content">
-                                <div class="pdf-item" data-pdf="">
-                                    <p>Coming Soon</p>
-                                    <span></span>
-                                </div>
-                            </div>
-
-                            <div class="topic-header">
-                                <h4>Database Warehousing</h4>
-                                <i class="fas fa-chevron-down toggle-icon"></i>
-                            </div>
-                            <div class="topic-content">
-                                <div class="pdf-item" data-pdf="">
-                                    <p>Coming Soon</p>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Subject: Machine Learning -->
-                <div class="subject-group">
-                    <div class="subject-header">
-                        <h3><i class="fas fa-project-diagram"></i> Machine Learning</h3>
-                        <i class="fas fa-chevron-down toggle-icon"></i>
-                    </div>
-                    <div class="subject-content">
-                        <div class="pdf-item" data-pdf="">
-                            <p>Coming Soon</p>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Subject: AI -->
-                <div class="subject-group">
-                    <div class="subject-header">
-                        <h3><i class="fas fa-robot"></i> Artificial Intelligence</h3>
-                        <i class="fas fa-chevron-down toggle-icon"></i>
-                    </div>
-                    <div class="subject-content">
-                        <div class="pdf-item" data-pdf="">
-                            <p>Coming Soon</p>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-    </section>
-
-    <!-- YouTube Section -->
-    <section id="youtube" class="section bg-alt">
-        <div class="container">
-            <h2 class="section-title">Latest on YouTube / GitHub</h2>
-            <div class="carousel-container">
-                <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                <div class="carousel-track-container">
-                    <ul class="carousel-track">
-                        <li class="carousel-slide current-slide">
-                            <div class="video-card">
-                                <!-- Placeholder for YouTube Embed/Thumbnail -->
-                                <div class="video-thumbnail">
-                                    <img src="assets/YTLivebg.png" alt="Video 1">
-                                    <a href="https://www.youtube.com/@AnmolPy/streams" target="_blank"
-                                        class="play-icon"><i class="fas fa-play"></i></a>
-                                </div>
-                                <h3>Study With Me LIVE Streams for GATE-DA 2027 (Check it out)</h3>
-                            </div>
-                        </li>
-                        <li class="carousel-slide">
-                            <div class="video-card">
-                                <div class="video-thumbnail">
-                                    <img src="assets/YTShortbg.png" alt="Video 2">
-                                    <a href="https://www.youtube.com/playlist?list=PLWm6HIfISLPmGU8ITnD-cSIIA-D55mkN2"
-                                        target="_blank" class="play-icon"><i class="fas fa-play"></i></a>
-                                </div>
-                                <h3>Youtube Shorts for DSA - Leetcode (Check it out)</h3>
-                            </div>
-                        </li>
-                        <li class="carousel-slide">
-                            <div class="video-card">
-                                <div class="video-thumbnail">
-                                    <img src="assets/GitHubbg.png" alt="Video 3">
-                                    <a href="https://github.com/anmolpatel20" target="_blank" class="play-icon"><i
-                                            class="fas fa-play"></i></a>
-                                </div>
-                                <h3>GitHub Repository for GATE-DA 2027 (Check it out)</h3>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
-            </div>
-            <div class="carousel-nav">
-                <button class="carousel-indicator current-slide"></button>
-                <button class="carousel-indicator"></button>
-                <button class="carousel-indicator"></button>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about-section">
-        <div class="about-bg-slider">
-            <img src="assets/Aboutbg1.png" class="about-bg active" alt="About Background 1">
-            <img src="assets/Aboutbg2.png" class="about-bg" alt="About Background 2">
-        </div>
-        <div class="about-overlay"></div>
-        <div class="container about-content">
-            <h2 class="section-title text-white">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <a href="https://anmolpatel20.github.io/Anmol_Portfolio/" class="btn btn-primary"
-                        style="margin-bottom: 20px;"> View My Portfolio</a>
-                    <h1>Message from Anmol Patel</h1>
-                    <p>Hi GATE Aspirants,</p>
-                    <p>This platform is an initiative to support GATE Data Science & AI aspirants by providing
-                        well-structured handwritten notes free of cost.</p>
-                    <p>I am also a student preparing for GATE DA 2027, and this platform reflects my learning journey
-                        alongside yours. The objective is to simplify complex topics and enable clear, effective
-                        learning and revision.</p>
-                    <p>For updates, study resources, and related content, you may subscribe to my YouTube channel and
-                        follow me on Instagram and LinkedIn.</p>
-                </div>
-                <div class="about-avatar-container">
-                    <img src="assets/avatar.png" alt="Anmol Patel" class="about-avatar">
+                <div class="hero-buttons">
+                    <a href="#subjects" class="btn btn-primary">Browse Notes</a>
+                    <a href="https://github.com/anmolpatel20" target="_blank" class="btn btn-outline">GitHub Repository</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=inquiry.anmol20@gmail.com"
-                        class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>inquiry.anmol20@gmail.com</p>
-                    </a>
-                    <a href="https://www.instagram.com/techanmol.py/" target="_blank" class="contact-item">
-                        <i class="fab fa-instagram"></i>
-                        <p>Connect on Instagram</p>
-                    </a>
-                    <a href="https://www.youtube.com/@AnmolPy" target="_blank" class="contact-item">
-                        <i class="fab fa-youtube"></i>
-                        <p>Connect on YouTube</p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/anmol-patel-a99362284" target="_blank" class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <p>Connect on LinkedIn</p>
-                    </a>
-                    <a href="https://github.com/AnmolPatel20" target="_blank" class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <p>Connect on GitHub</p>
-                    </a>
+        <!-- Subjects Section -->
+        <section id="subjects" class="subjects-section">
+            <div class="container">
+                <div class="subjects-top">
+                    <div>
+                        <h2 class="subjects-heading">Curriculum Mastery</h2>
+                        <p class="subjects-sub">Structured study material across all core domains.</p>
+                    </div>
+                    <span class="badge-updated">UPDATED JUN 2026</span>
                 </div>
-                <div class="contact-form-container">
-                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                        <input type="hidden" name="access_key" value="e47c3dce-a8ec-43a5-a539-e304a97070aa">
-                        <input type="checkbox" name="botcheck" style="display:none">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder=" " required>
-                            <label>Your Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder=" " required>
-                            <label>Your Email</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" rows="5" placeholder=" " required></textarea>
-                            <label>Your Message</label>
-                        </div>
-                        <button type="submit" class="btn btn-submit">
-                            Send Message <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
+
+                <div class="subjects-grid">
+
+                    <div class="subject-card" data-subject="aptitude">
+                        <div class="card-icon blue"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>General Aptitude</h3>
+                        <a class="view-link" data-subject="aptitude">View Notes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="subject-card" data-subject="python">
+                        <div class="card-icon indigo"><i class="fab fa-python"></i></div>
+                        <h3>Python for DA</h3>
+                        <a class="view-link" data-subject="python">View Notes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="subject-card" data-subject="dsa">
+                        <div class="card-icon purple"><i class="fas fa-code"></i></div>
+                        <h3>Algorithms & Data Structures</h3>
+                        <a class="view-link" data-subject="dsa">View Notes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="subject-card" data-subject="dbms">
+                        <div class="card-icon cyan"><i class="fas fa-database"></i></div>
+                        <h3>DBMS</h3>
+                        <a class="view-link" data-subject="dbms">View Notes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="subject-card" data-subject="warehousing">
+                        <div class="card-icon teal"><i class="fas fa-server"></i></div>
+                        <h3>Warehousing</h3>
+                        <a class="view-link" data-subject="warehousing">View Notes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="subject-card" data-subject="linear-algebra">
+                        <div class="card-icon green"><span class="math-icon">M<small>·</small>T<small>·</small>X</span></div>
+                        <h3>Linear Algebra</h3>
+                        <a class="view-link" data-subject="linear-algebra">View Notes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="subject-card" data-subject="calculus">
+                        <div class="card-icon indigo"><span class="math-icon">∑</span></div>
+                        <h3>Calculus & Optimization</h3>
+                        <a class="view-link" data-subject="calculus">View Notes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="subject-card" data-subject="probability">
+                        <div class="card-icon amber"><i class="fas fa-chart-bar"></i></div>
+                        <h3>Probability & Statistics</h3>
+                        <a class="view-link" data-subject="probability">View Notes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="subject-card" data-subject="ml">
+                        <div class="card-icon rose"><i class="fas fa-brain"></i></div>
+                        <h3>Machine Learning</h3>
+                        <a class="view-link" data-subject="ml">View Notes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="subject-card" data-subject="ai">
+                        <div class="card-icon blue"><i class="fas fa-robot"></i></div>
+                        <h3>Artificial Intelligence</h3>
+                        <a class="view-link" data-subject="ai">View Notes <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-wrapper">
+                <div class="about-photo">
+                    <img src="assets/avatar.png" alt="Anmol Patel">
+                </div>
+                <div class="about-body">
+                    <h2 class="about-heading">A Message From One Aspirant to Another</h2>
+                    <p>Hi GATE Aspirants, This platform is an initiative to support GATE Data Science & AI aspirants by
+                        providing well-structured handwritten notes free of cost.</p>
+                    <p>I'm Anmol Patel, and I am also preparing for GATE DA 2027. This platform is a reflection of my own learning journey, built with the aim of helping fellow aspirants simplify complex topics and make learning and revision more effective.</p>
+                    <p>For updates, study resources, and related content, you may subscribe to my
+                        <a href="https://www.youtube.com/@AnmolPy" class="inline-link" target="_blank">YouTube
+                            channel</a>
+                        and follow me on
+                        <a href="https://www.instagram.com/techanmol.py/" class="inline-link"
+                            target="_blank">Instagram</a>
+                        and
+                        <a href="https://www.linkedin.com/in/anmol-patel-a99362284" class="inline-link"
+                            target="_blank">LinkedIn</a>.
+                    </p>
+
+                    <div class="social-pills">
+                        <a href="https://anmolpatel20.github.io/Anmol_Portfolio/" target="_blank" class="pill"><i
+                                class="fas fa-briefcase"></i> Portfolio</a>
+                        <a href="https://github.com/AnmolPatel20" target="_blank" class="pill"><i
+                                class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/anmol-patel-a99362284" target="_blank" class="pill"><i
+                                class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://www.youtube.com/@AnmolPy" target="_blank" class="pill"><i
+                                class="fab fa-youtube"></i> YouTube</a>
+                        <a href="https://www.instagram.com/techanmol.py/" target="_blank" class="pill"><i
+                                class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=inquiry.anmol20@gmail.com"
+                            target="_blank" class="pill"><i class="fas fa-envelope"></i> Gmail</a>
+                    </div>
+
+                    <p class="quote">"Small daily progress compounds into extraordinary results."</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Anmol Patel. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://www.youtube.com/@AnmolPy"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.linkedin.com/in/anmol-patel-a99362284"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/techanmol.py"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/AnmolPatel20"><i class="fab fa-github"></i></a>
-                <a href="https://www.facebook.com/share/1B37YivzS3/"><i class="fab fa-facebook"></i></a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=inquiry.anmol20@gmail.com" target="_blank"><i
-                        class="fas fa-envelope"></i></a>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <h3 class="footer-brand">GATE DA Prep</h3>
+                <p class="footer-copy">&copy; 2026 GATE DA Academy. Built for deep focus.</p>
+                <p class="footer-copy">Built by Anmol Patel</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://anmolpatel20.github.io/Anmol_Portfolio/" target="_blank" aria-label="Portfolio"><i
+                        class="fas fa-briefcase"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- PDF Modal -->
-    <div id="pdf-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 id="modal-title">Document Viewer</h3>
-                <button class="close-modal">&times;</button>
+    <!-- Notes Modal (Subject Detail Panel) -->
+    <div id="notes-modal" class="notes-modal">
+        <div class="notes-overlay"></div>
+        <div class="notes-panel">
+            <div class="notes-panel-head">
+                <h2 id="notes-title">Subject</h2>
+                <button class="notes-close" aria-label="Close"><i class="fas fa-times"></i></button>
             </div>
-            <div class="modal-body">
+            <div class="notes-panel-body" id="notes-body">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- PDF Viewer Modal -->
+    <div id="pdf-modal" class="pdf-modal">
+        <div class="pdf-modal-content">
+            <div class="pdf-modal-head">
+                <h3 id="pdf-title">Document Viewer</h3>
+                <button class="pdf-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="pdf-modal-body">
                 <iframe id="pdf-frame" src="" frameborder="0"></iframe>
                 <div class="pdf-fallback">
                     <p>Your browser does not support PDF embedding.</p>
