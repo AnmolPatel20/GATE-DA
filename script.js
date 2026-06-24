@@ -30,7 +30,31 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'python': {
             name: 'Python for DA',
-            topics: []
+            topics: [
+                {
+                    name: 'Complete Python Notes',
+                    pdfs: [
+                        { name: 'Python Full', file: 'pdfs/Python_DA/Python_full.pdf' }
+                    ]
+                },
+                {
+                    name: 'Topic-wise Notes',
+                    pdfs: [
+                        { name: 'Datatypes', file: 'pdfs/Python_DA/Datatypes_by_Anmol.pdf' },
+                        { name: 'Operators', file: 'pdfs/Python_DA/Operators_by_Anmol.pdf' },
+                        { name: 'Control Statements', file: 'pdfs/Python_DA/Ctrl_Stmts_by_Anmol.pdf' },
+                        { name: 'Strings', file: 'pdfs/Python_DA/Strings_by_Anmol.pdf' },
+                        { name: 'Lists', file: 'pdfs/Python_DA/Lists_by_Anmol.pdf' },
+                        { name: 'Tuples', file: 'pdfs/Python_DA/Tuples_by_Anmol.pdf' },
+                        { name: 'Sets', file: 'pdfs/Python_DA/Sets_by_Anmol.pdf' },
+                        { name: 'Dictionary', file: 'pdfs/Python_DA/Dictionary_by_Anmol.pdf' },
+                        { name: 'Functions', file: 'pdfs/Python_DA/Functions_by_Anmol.pdf' },
+                        { name: 'Recursion', file: 'pdfs/Python_DA/Recursion_by_Anmol.pdf' },
+                        { name: 'Functional Programming', file: 'pdfs/Python_DA/Functional_Programming_by_Anmol.pdf' },
+                        { name: 'OOPS, Exception Handling & Modules', file: 'pdfs/Python_DA/OOPS_ExceptionHandling_Modules_by_Anmol.pdf' }
+                    ]
+                }
+            ]
         },
         'dsa': {
             name: 'Algorithms & Data Structures',
@@ -42,7 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
         'dbms': {
             name: 'DBMS',
             topics: [
-                { name: 'Database Management (DBMS)', pdfs: [] }
+                { name: 'Database Management (DBMS)', pdfs: [
+                        { name: 'Relational Model & Normal Forms', file: 'pdfs/DBMS/Relational_Model_&_Normal_Forms_by_Anmol.pdf' }
+                    ] }
             ]
         },
         'warehousing': {
@@ -77,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ═══════════════════════════════════════
     //  1. COUNTDOWN TIMER
     // ═══════════════════════════════════════
-    const targetDate = new Date('2027-02-08T09:00:00+05:30').getTime();
+    const targetDate = new Date('2027-02-07T09:00:00+05:30').getTime();
 
     function updateCountdown() {
         const now = Date.now();
