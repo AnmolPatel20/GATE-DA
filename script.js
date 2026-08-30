@@ -87,7 +87,14 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'probability': {
             name: 'Probability & Statistics',
-            topics: []
+            topics: [
+                {
+                    name: 'Combinatorics',
+                    pdfs: [
+                        { name: 'Permutation & Combination', file: 'pdfs/Probablity/Permutation&Combination.pdf' }
+                    ]
+                }
+            ]
         },
         'ml': {
             name: 'Machine Learning',
