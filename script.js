@@ -60,7 +60,12 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Algorithms & Data Structures',
             topics: [
                 { name: 'Data Structures', pdfs: [] },
-                { name: 'Algorithms', pdfs: [] }
+                {
+                    name: 'Algorithms',
+                    pdfs: [
+                        { name: 'Sorting Algorithm', file: 'pdfs/DAA/SortingAlgorithm.pdf' }
+                    ]
+                }
             ]
         },
         'dbms': {
